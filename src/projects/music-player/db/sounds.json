@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Hey Brother",
+    "subtitle": "Avicii",
+    "image": "/assets/music-player/images/HeyBrother.jpg",
+    "soundTrack": "/assets/music-player/audios/HeyBrother.mp3"
+  },
+  {
+    "title": "7 Years",
+    "subtitle": "Lukas Graham",
+    "image": "/assets/music-player/images/7Years.jpeg",
+    "soundTrack": "/assets/music-player/audios/7Years.mp3"
+  },
+  {
+    "title": "Counting Stars",
+    "subtitle": "One Republic",
+    "image": "/assets/music-player/images/CountingStars.jpeg",
+    "soundTrack": "/assets/music-player/audios/CountingStars.mp3"
+  },
+  {
+    "title": "Monster",
+    "subtitle": "Shawn Mendes Ft Justin Bieber ",
+    "image": "/assets/music-player/images/Monster.jpg",
+    "soundTrack": "/assets/music-player/audios/Monster.mp3"
+  },
+  {
+    "title": "Calm Down",
+    "subtitle": " Rema Ft. Selena Gomez ",
+    "image": "/assets/music-player/images/CalmDown.jpg",
+    "soundTrack": "/assets/music-player/audios/CalmDown.mp3"
+  }
+]
