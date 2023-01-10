@@ -2,6 +2,7 @@ export const defaultTheme = {
   colors: {
     "black-700": "#121214",
     "black-200": "#29292e",
+    'Almost-White': 'hsl(0, 0%, 98%)',
 
 
     "purple-700": "#1A1626",

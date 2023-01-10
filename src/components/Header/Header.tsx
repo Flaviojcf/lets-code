@@ -3,17 +3,40 @@ import {
   DiscorContainer,
   HeaderContainer,
   LinksContainer,
+  MenuContent,
+  MenuList,
+  MenuRoot,
+  MenuTrigger,
   RocketContainer,
 } from "./styles";
+
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
 export function Header() {
   return (
     <HeaderContainer>
       <h1>#boraCodar</h1>
       <LinksContainer>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <MenuRoot>
+          <MenuList>
+            <NavigationMenu.Item>
+              <MenuTrigger>
+                <li>Desafios</li>
+              </MenuTrigger>
+              <MenuContent>
+                <ul className="Feature">
+                  <Link to="/challenges/week01">
+                    <li>Semana 01</li>
+                  </Link>
+                </ul>
+                <NavigationMenu.Link />
+              </MenuContent>
+            </NavigationMenu.Item>
+          </MenuList>
+        </MenuRoot>
 
         <li></li>
       </LinksContainer>
