@@ -20,9 +20,7 @@ export const HeaderContainer = styled.div`
     color: ${(props) => props.theme.colors["purple-100"]};
   }
 
-  @media screen and (max-width: 768px) {
-    gap: 1.5rem;
-  }
+  
 `;
 
 export const RocketContainer = styled.div`
@@ -44,9 +42,12 @@ export const RocketContainer = styled.div`
 
 export const LinksContainer = styled.ul`
   display: flex;
-  height: 100%;
+  align-items: center;
+  max-width: 20%;
+ 
 
-  gap: 2.5rem;
+
+
 
   > a {
     transition: all ease 0.2s;
@@ -71,6 +72,12 @@ export const LinksContainer = styled.ul`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
 `;
 
 export const DiscorContainer = styled.a`
@@ -101,30 +108,27 @@ export const DiscorContainer = styled.a`
 export const MenuRoot = styled(NavigationMenu.Root)`
   display: flex;
   padding: 0 2rem;
-  position: relative;
 `;
 
 export const MenuList = styled(NavigationMenu.List)`
   display: flex;
-  gap: 1rem;
-  width: 12rem;
   text-decoration: none;
   list-style: none;
 `;
 
 export const MenuTrigger = styled(NavigationMenu.Trigger)`
-  border: none;
-  cursor: pointer;
+
   display: flex;
   align-items: center;
   gap: 1rem;
+ 
 
-  font-family: "Epilogue", sans-serif;
-  font-size: 16px;
 
-  color: white;
+  border: none;
   cursor: pointer;
-  background: ${(props) => props.theme.colors["black-700"]};
+  background: none;
+  color: white;
+
 
   > li {
     color: white;
@@ -138,6 +142,7 @@ export const MenuTrigger = styled(NavigationMenu.Trigger)`
 
 export const MenuContent = styled(NavigationMenu.Content)`
   position: absolute;
+
 
   > ul {
     border: 1px solid white;
@@ -161,7 +166,7 @@ export const MenuContent = styled(NavigationMenu.Content)`
       display: flex;
       gap: 1rem;
       cursor: pointer;
-      color: ${(props)=>props.theme.colors["black-700"]};
+      color: ${(props) => props.theme.colors["black-700"]};
 
       &:hover {
         color: ${(props) => props.theme.colors["purple-100"]};
