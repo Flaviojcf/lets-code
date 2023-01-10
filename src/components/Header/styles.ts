@@ -20,6 +20,9 @@ export const HeaderContainer = styled.div`
     color: ${(props) => props.theme.colors["purple-100"]};
   }
 
+ 
+
+
   
 `;
 
@@ -44,6 +47,8 @@ export const LinksContainer = styled.ul`
   display: flex;
   align-items: center;
   max-width: 20%;
+
+ 
  
 
 
@@ -142,6 +147,7 @@ export const MenuTrigger = styled(NavigationMenu.Trigger)`
 
 export const MenuContent = styled(NavigationMenu.Content)`
   position: absolute;
+  z-index: 999;
 
 
   > ul {
@@ -161,6 +167,11 @@ export const MenuContent = styled(NavigationMenu.Content)`
     gap: 1rem;
 
     margin-top: 1rem;
+
+    
+  @media screen and (max-width: 768px) {
+    margin-left: -2rem;
+  }
 
     > a > li {
       display: flex;
