@@ -18,7 +18,7 @@ export function CardProduct() {
         <CouchContainer>
           <img
             src={
-              isRotating
+              !isRotating
                 ? "/assets/card-product/images/couch.png"
                 : "/assets/card-product/images/couchGif.gif"
             }
