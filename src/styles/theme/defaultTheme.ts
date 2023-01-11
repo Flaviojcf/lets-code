@@ -17,5 +17,10 @@ export const defaultTheme = {
       "purple-300": "#2A2141",
       "purple-500": "#0F0D13",
     },
+
+    "card-product": {
+      "rose-200": "#D9CDF7",
+      "purple-700": "#271A45"
+    }
   },
 } as const;

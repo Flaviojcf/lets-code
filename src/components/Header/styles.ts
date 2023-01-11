@@ -19,11 +19,6 @@ export const HeaderContainer = styled.div`
   > h1 {
     color: ${(props) => props.theme.colors["purple-100"]};
   }
-
- 
-
-
-  
 `;
 
 export const RocketContainer = styled.div`
@@ -47,12 +42,6 @@ export const LinksContainer = styled.ul`
   display: flex;
   align-items: center;
   max-width: 20%;
-
- 
- 
-
-
-
 
   > a {
     transition: all ease 0.2s;
@@ -82,7 +71,6 @@ export const LinksContainer = styled.ul`
     flex-direction: column;
     gap: 0.5rem;
   }
-
 `;
 
 export const DiscorContainer = styled.a`
@@ -122,18 +110,14 @@ export const MenuList = styled(NavigationMenu.List)`
 `;
 
 export const MenuTrigger = styled(NavigationMenu.Trigger)`
-
   display: flex;
   align-items: center;
   gap: 1rem;
- 
-
 
   border: none;
   cursor: pointer;
   background: none;
   color: white;
-
 
   > li {
     color: white;
@@ -148,7 +132,6 @@ export const MenuTrigger = styled(NavigationMenu.Trigger)`
 export const MenuContent = styled(NavigationMenu.Content)`
   position: absolute;
   z-index: 999;
-
 
   > ul {
     border: 1px solid white;
@@ -168,16 +151,17 @@ export const MenuContent = styled(NavigationMenu.Content)`
 
     margin-top: 1rem;
 
-    
-  @media screen and (max-width: 768px) {
-    margin-left: -2rem;
-  }
+    @media screen and (max-width: 768px) {
+      margin-left: -2rem;
+    }
 
     > a > li {
       display: flex;
       gap: 1rem;
+      width: 100%;
       cursor: pointer;
       color: ${(props) => props.theme.colors["black-700"]};
+
 
       &:hover {
         color: ${(props) => props.theme.colors["purple-100"]};

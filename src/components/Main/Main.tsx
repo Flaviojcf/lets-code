@@ -1,14 +1,5 @@
-import { Link } from "react-router-dom";
-import {
-  ChallengeContainer,
-  ChallengeImageContainer,
-  Container,
-  FigmaContainer,
-  FigmaTextContainer,
-  FolderFigmaContainer,
-  InstructionsContainer,
-  TextContainer,
-} from "./styles";
+import { WeekChallengeContainer } from "../WeekChallengeContainer/WeekChallenge";
+import { Container, TextContainer } from "./styles";
 
 export function Main() {
   return (
@@ -21,40 +12,22 @@ export function Main() {
           e postar nas redes sociais com a hashtag <strong>#boraCodar</strong>.
         </p>
       </TextContainer>
-      <Link to="/challenges/week01">
-        <ChallengeImageContainer>
-          <img src="/Challenge-01.webp" />
-        </ChallengeImageContainer>
-      </Link>
-      <InstructionsContainer>
-        <ChallengeContainer>
-          <div>Instruções</div>
-          <h1>Desafio #01 - um player de música</h1>
-          <p>
-            Desenvolva o player conforme especificado utilizando as tecnologias
-            da sua preferência. Você pode adicionar outros detalhes, como
-            animações.
-          </p>
-        </ChallengeContainer>
-        <FigmaContainer
-          href={
-            "https://www.figma.com/file/CFh7PW6dxBMwf4lQM3Eeot/boraCodar-Desafio-1-Copy?fuid=1032418892003585096"
-          }
-          target="_blank"
-        >
-          <FolderFigmaContainer>
-            <img src="/folder.svg" />
-          </FolderFigmaContainer>
-          <FigmaTextContainer>
-            <h1>Material complementar</h1>
-            <p>
-              Acesse o material complementar, arquivo do Figma e informações
-              sobre os assets.
-            </p>
-          </FigmaTextContainer>
-          <img src="/arrow-figma.svg" />
-        </FigmaContainer>
-      </InstructionsContainer>
+      <WeekChallengeContainer
+        linkChallenge="/challenges/week01"
+        imgChallenge="/assets/music-player/images/Challenge-01.webp"
+        titleChallenge="Desafio #01 - um player de música"
+        descriptionChallenge=" Desenvolva o player conforme especificado utilizando as tecnologias
+        da sua preferência. Você pode adicionar outros detalhes, como
+        animações."
+        figmaLink="https://www.figma.com/file/CFh7PW6dxBMwf4lQM3Eeot/boraCodar-Desafio-1-Copy?fuid=1032418892003585096"
+      />
+      <WeekChallengeContainer
+        linkChallenge="/challenges/week02"
+        imgChallenge="/assets/card-product/images/Challenge-02.webp"
+        titleChallenge="Desafio #02 - um card de produto"
+        descriptionChallenge=" Desenvolva o card de produto conforme especificado utilizando as tecnologias da sua preferência. O arquivo do Figma contém um protótipo e o link para baixar o arquivo .gif a ser utilizado."
+        figmaLink="https://www.figma.com/file/Sk04cAowKXOWVO3vlaNqLu/23boraCodar-Desafio-2/duplicate"
+      />
     </Container>
   );
 }

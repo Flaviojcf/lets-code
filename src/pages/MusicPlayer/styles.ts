@@ -13,8 +13,6 @@ export const Container = styled.div`
 
   background: ${(props) => props.theme.colors["music-player"]["purple-500"]};
 
-
-
   align-items: center;
   justify-content: center;
 
@@ -31,11 +29,9 @@ export const TextContainer = styled.div<DesignPlayer>`
   margin-bottom: 4rem;
   cursor: pointer;
 
-
-
   transition: all ease 0.2s;
 
   &:hover {
-    color: ${(props)=>props.theme.colors["purple-500"]};
+    color: ${(props) => props.theme.colors["purple-500"]};
   }
 `;

@@ -7,6 +7,7 @@ interface DesignPlayer {
 export const Container = styled.div<DesignPlayer>`
   display: ${(props) => (props.isPlayerOnScreen === true ? "none" : "flex")};
 
+
   height: 100%;
 
   align-items: center;
