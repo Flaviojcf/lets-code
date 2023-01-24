@@ -71,6 +71,7 @@ export const ContentButtons = styled.div`
 
   @media screen and (max-width:940px) { 
     padding: 0rem;
+    background: none;
   }
 
 
