@@ -34,15 +34,15 @@ export function Header() {
                   <Link to="/challenges/week02">
                     <li>Semana 02</li>
                   </Link>
+                  <Link to="/challenges/week03">
+                    <li>Semana 03</li>
+                  </Link>
                 </ul>
-
                 <NavigationMenu.Link />
               </MenuContent>
             </NavigationMenu.Item>
           </MenuList>
         </MenuRoot>
-
-        <li></li>
       </LinksContainer>
 
       <RocketContainer>

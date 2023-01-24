@@ -101,27 +101,33 @@ export const DiscorContainer = styled.a`
 export const MenuRoot = styled(NavigationMenu.Root)`
   display: flex;
   padding: 0 2rem;
+  height: 100%;
 `;
 
 export const MenuList = styled(NavigationMenu.List)`
   display: flex;
   text-decoration: none;
   list-style: none;
+  height: 100%;
 `;
 
 export const MenuTrigger = styled(NavigationMenu.Trigger)`
   display: flex;
   align-items: center;
   gap: 1rem;
+  
+  
 
   border: none;
   cursor: pointer;
   background: none;
   color: white;
 
+  
   > li {
     color: white;
     transition: all ease 0.2s;
+    
 
     &:hover {
       color: ${(props) => props.theme.colors["purple-600"]};

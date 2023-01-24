@@ -14,6 +14,7 @@ export const ChallengeImageContainer = styled.div`
 
   > a > img {
     width: 100%;
+    max-width: 1080px;
     height: 100%;
     cursor: pointer;
 

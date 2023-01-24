@@ -2,8 +2,7 @@ export const defaultTheme = {
   colors: {
     "black-700": "#121214",
     "black-200": "#29292e",
-    'Almost-White': 'hsl(0, 0%, 98%)',
-
+    "Almost-White": "hsl(0, 0%, 98%)",
 
     "purple-700": "#1A1626",
     "purple-500": "#8257E5",
@@ -20,7 +19,18 @@ export const defaultTheme = {
 
     "card-product": {
       "rose-200": "#D9CDF7",
-      "purple-700": "#271A45"
-    }
+      "purple-700": "#271A45",
+    },
+    "buttons-cursors": {
+      "purple-700": "#8257E5",
+      "purple-600": "#9674E5",
+      "purple-500": "#D9CDF7",
+      "purple-400": "#130F1E",
+
+      "gray-100": "#6A617F",
+      "gray-200": "#3C3748",
+
+      black: "#0B0911",
+    },
   },
 } as const;

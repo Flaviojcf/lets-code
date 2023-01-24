@@ -28,6 +28,13 @@ export function Main() {
         descriptionChallenge=" Desenvolva o card de produto conforme especificado utilizando as tecnologias da sua preferência. O arquivo do Figma contém um protótipo e o link para baixar o arquivo .gif a ser utilizado."
         figmaLink="https://www.figma.com/file/Sk04cAowKXOWVO3vlaNqLu/23boraCodar-Desafio-2/duplicate"
       />
+      <WeekChallengeContainer
+        linkChallenge="/challenges/week03"
+        imgChallenge="/assets/buttons-cursors/images/Challenge-03.webp"
+        titleChallenge="Desafio #03 - botões e cursores"
+        descriptionChallenge=" Desenvolva uma tela de documentação de botões que possui uma área de pré-visualização dos mesmos. Os estados dos botões e os cursores adequados devem ser exibidos. Você pode ir além e adicionar animações, por exemplo."
+        figmaLink="https://www.figma.com/file/1tQYGEDabinStCRMbGFXzR/%23boraCodar---Desafio-3-(Community)?node-id=102%3A549&t=vR5W3B9rcxgbDKmD-0"
+      />
     </Container>
   );
 }
