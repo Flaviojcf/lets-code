@@ -35,6 +35,13 @@ export function Main() {
         descriptionChallenge=" Desenvolva uma tela de documentação de botões que possui uma área de pré-visualização dos mesmos. Os estados dos botões e os cursores adequados devem ser exibidos. Você pode ir além e adicionar animações, por exemplo."
         figmaLink="https://www.figma.com/file/1tQYGEDabinStCRMbGFXzR/%23boraCodar---Desafio-3-(Community)?node-id=102%3A549&t=vR5W3B9rcxgbDKmD-0"
       />
+      <WeekChallengeContainer
+        linkChallenge="/challenges/week04"
+        imgChallenge="/assets/chat/images/Challenge-04.png"
+        titleChallenge="Desafio #04 - um chat"
+        descriptionChallenge=" Desenvolva um chat mobile/desktop, que pode ser responsivo. Você pode ir além e adicionar animações, ou mesmo implementar um chat funcional.."
+        figmaLink="https://www.figma.com/file/Gtnv7lna4wQ3MvhNcQv5vk/%23boraCodar---Desafio-4-(Community)"
+      />
     </Container>
   );
 }
