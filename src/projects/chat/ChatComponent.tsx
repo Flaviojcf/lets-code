@@ -12,6 +12,7 @@ import {
   ProfileContainer,
   TimeContainer,
 } from "./styles";
+import { Link } from "react-router-dom";
 
 interface DataProps {
   background: string;
@@ -43,7 +44,8 @@ export function ChatComponent() {
       background: "#633BBC",
       hour: "11:34",
       isMessageSend: false,
-      message: "E se a gente fizesse um chat moderno e responsivo em apenas uma semana?",
+      message:
+        "E se a gente fizesse um chat moderno e responsivo em apenas uma semana?",
       name: "Cecilia",
     },
     {
@@ -56,7 +58,7 @@ export function ChatComponent() {
   ]);
 
   function storeData(info: DataProps) {
-    if(!info.message) return
+    if (!info.message) return;
     setData((state) => [...state, info]);
     setMessage("");
   }
@@ -75,7 +77,9 @@ export function ChatComponent() {
             </NameContainer>
           </ImageAndNameContainer>
           <CloseContainer>
-            <img src="/assets/chat/images/close.png" />
+            <Link to="/">
+              <img src="/assets/chat/images/close.png" />
+            </Link>
           </CloseContainer>
         </ProfileContainer>
 

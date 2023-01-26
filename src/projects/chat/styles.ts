@@ -60,6 +60,12 @@ export const NameContainer = styled.div`
 export const CloseContainer = styled.div`
   display: flex;
   cursor: pointer;
+
+  transition: all ease 0.2s;
+  &:hover {
+    opacity: 60%;
+  }
+  
 `;
 
 export const TimeContainer = styled.div`
