@@ -32,5 +32,16 @@ export const defaultTheme = {
 
       black: "#0B0911",
     },
+    "chat":{
+      gray: "#E1E1E6",
+      "green-500":"#00B37E",
+      "green-400":"#07847E",
+
+      "purple-700": "#1A1924",
+      "purple-200": "#633BBC",
+
+      "black-400": "#282843",
+
+    }
   },
 } as const;

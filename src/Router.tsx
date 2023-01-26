@@ -5,6 +5,7 @@ import { CardProductPage } from "./pages/CardProductPage";
 
 import { Home } from "./pages/Home/Home";
 import { MusicPlayer } from "./pages/MusicPlayer";
+import { ChatComponent } from "./projects/chat/ChatComponent";
 
 export function Router() {
   return (
@@ -14,6 +15,7 @@ export function Router() {
         <Route path="/challenges/week01" element={<MusicPlayer />} />
         <Route path="/challenges/week02" element={<CardProductPage />} />
         <Route path="/challenges/week03" element={<ButtonsAndCursors />} />
+        <Route path="/challenges/week04" element={<ChatComponent />} />
       </Route>
     </Routes>
   );
