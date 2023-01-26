@@ -32,7 +32,11 @@ export const ImageAndNameContainer = styled.div`
   gap: 1rem;
 `;
 
-export const ImageContainer = styled.picture``;
+export const ImageContainer = styled.picture`
+  >img {
+    object-fit: contain;
+  }
+`;
 
 export const NameContainer = styled.div`
   display: flex;
