@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { DefaultLayout } from "./layouts/DefaultLayout";
 import { ButtonsAndCursors } from "./pages/ButtonsAndCursors/ButtonsAndCursors";
+import { Calculator } from "./pages/Calculator/Calculator";
 import { CardProductPage } from "./pages/CardProductPage";
 
 import { Home } from "./pages/Home/Home";
@@ -16,6 +17,7 @@ export function Router() {
         <Route path="/challenges/week02" element={<CardProductPage />} />
         <Route path="/challenges/week03" element={<ButtonsAndCursors />} />
         <Route path="/challenges/week04" element={<ChatComponent />} />
+        <Route path="/challenges/week05" element={<Calculator />} />
       </Route>
     </Routes>
   );

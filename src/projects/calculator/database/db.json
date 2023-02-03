@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "backgroundColor": "#2D2A37",
+    "color": "#975DFA",
+    "value": "CE",
+    "arithmetic": "CE"
+  },
+  {
+    "id": 2,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "C",
+    "arithmetic": "C"
+  },
+  {
+    "id": 3,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "image": "/assets/calculator/images/Percent.png",
+    "arithmetic": "percentage"
+  },
+  {
+    "id": 4,
+    "backgroundColor": "#462878",
+    "color": "rgba(235, 235, 235, 1)",
+    "image": "/assets/calculator/images/Divide.png",
+    "arithmetic": "division"
+  },
+
+  {
+    "id": 5,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "7"
+  },
+
+  {
+    "id": 6,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "8"
+  },
+  {
+    "id": 7,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "9"
+  },
+
+  {
+    "id": 8,
+    "backgroundColor": "#462878",
+    "color": "rgba(235, 235, 235, 1)",
+    "image": "/assets/calculator/images/X.png",
+    "arithmetic": "multiplication"
+  },
+
+  {
+    "id": 9,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "4"
+  },
+
+  {
+    "id": 10,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "5"
+  },
+  {
+    "id": 11,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "6"
+  },
+
+  {
+    "id": 12,
+    "backgroundColor": "#462878",
+    "color": "rgba(235, 235, 235, 1)",
+    "image": "/assets/calculator/images/Minus.png",
+    "arithmetic": "subtraction"
+  },
+
+  {
+    "id": 13,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "1"
+  },
+  {
+    "id": 14,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "2"
+  },
+  {
+    "id": 15,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "3"
+  },
+
+  {
+    "id": 16,
+    "backgroundColor": "#462878",
+    "color": "rgba(235, 235, 235, 1)",
+    "image": "/assets/calculator/images/Plus.png",
+    "arithmetic": "addition"
+  },
+  {
+    "id": 17,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "image": "/assets/calculator/images/PlusMinus.png",
+    "arithmetic": "transform"
+   
+  },
+  {
+    "id": 18,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": "0"
+  },
+  {
+    "id": 19,
+    "backgroundColor": "#2D2A37",
+    "color": "rgba(235, 235, 235, 1)",
+    "value": ","
+  },
+  {
+    "id": 20,
+    "backgroundColor": "#462878",
+    "color": "rgba(235, 235, 235, 1)",
+    "image": "/assets/calculator/images/EqualsBig.png",
+    "arithmetic" : "result"
+  }
+]

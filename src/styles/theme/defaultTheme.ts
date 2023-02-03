@@ -32,16 +32,25 @@ export const defaultTheme = {
 
       black: "#0B0911",
     },
-    "chat":{
+    chat: {
       gray: "#E1E1E6",
-      "green-500":"#00B37E",
-      "green-400":"#07847E",
+      "green-500": "#00B37E",
+      "green-400": "#07847E",
 
       "purple-700": "#1A1924",
       "purple-200": "#633BBC",
 
       "black-400": "#282843",
+    },
+    calculator: {
+      "gray-100": "#EBEBEB",
+      "gray-200": "#6B6B6B",
+      "gray-300": "#2D2A37",
 
-    }
+      "purple-400": "#462878",
+      "purple-300": "#7F45E2",
+      "purple-200": "#975DFA",
+      "purple-100": "#807ECE",
+    },
   },
 } as const;
