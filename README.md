@@ -15,7 +15,7 @@
 
 
   <p align="center">
-    This project is an audio equipment e-commerce. It includes features such as product catalog, shopping cart, and payment page.
+    This project is a repository for projects from rocketseat's lets code challenges
     <br />
     <a href="https:/github.com/flaviojcf/lets-code"><strong>Explore the code »</strong></a>
     <br />
