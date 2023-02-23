@@ -52,5 +52,8 @@ export const defaultTheme = {
       "purple-200": "#975DFA",
       "purple-100": "#807ECE",
     },
+    bordingPass: {
+      "purple-100": "#8257E5"
+    },
   },
 } as const;
