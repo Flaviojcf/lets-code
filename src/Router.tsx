@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { DefaultLayout } from "./layouts/DefaultLayout";
+import { BoardingPass } from "./pages/BoardingPass/BoardingPass";
 import { ButtonsAndCursors } from "./pages/ButtonsAndCursors/ButtonsAndCursors";
 import { Calculator } from "./pages/Calculator/Calculator";
 import { CardProductPage } from "./pages/CardProductPage";
@@ -18,6 +19,7 @@ export function Router() {
         <Route path="/challenges/week03" element={<ButtonsAndCursors />} />
         <Route path="/challenges/week04" element={<ChatComponent />} />
         <Route path="/challenges/week05" element={<Calculator />} />
+        <Route path="/challenges/week06" element={<BoardingPass />} />
       </Route>
     </Routes>
   );

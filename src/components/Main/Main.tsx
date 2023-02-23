@@ -53,6 +53,13 @@ export function Main() {
         para os botões e animações, por exemplo, além de tornar a calculadora funcional."
         figmaLink="https://www.figma.com/community/file/1202607074523509182"
       />
+      <WeekChallengeContainer
+        linkChallenge="/challenges/week06"
+        imgChallenge="/assets/boarding-pass/images/Challenge-06.png"
+        titleChallenge="Desafio #06 - um cartão de embarque"
+        descriptionChallenge=" Desenvolva um cartão de embarque"
+        figmaLink="https://www.figma.com/file/gR4zDSK9ULixZjGcR5v6rx/%23boraCodar---Desafio-6-(Community)?node-id=1%3A7&t=Y4KbbpfLjV4sA7bQ-0"
+      />
     </Container>
   );
 }
