@@ -41,26 +41,27 @@ export const RocketContainer = styled.div`
 export const LinksContainer = styled.ul`
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   max-width: 20%;
 
   > a {
     transition: all ease 0.2s;
-    &:hover {
-      color: ${(props) => props.theme.colors["purple-600"]};
-    }
-  }
-  > li {
-    color: white;
-    cursor: pointer;
-    height: 100%;
-    transition: all ease 0.2s;
 
     &:hover {
       color: ${(props) => props.theme.colors["purple-600"]};
     }
 
-    > a {
+    > li {
+      display: flex;
+      align-items: flex-end;
+      color: white;
+      cursor: pointer;
+      height: 100%;
       transition: all ease 0.2s;
+      height: 2rem;
+      font-size: 14px;
+
       &:hover {
         color: ${(props) => props.theme.colors["purple-600"]};
       }
@@ -69,7 +70,7 @@ export const LinksContainer = styled.ul`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.1rem;
   }
 `;
 
@@ -100,34 +101,31 @@ export const DiscorContainer = styled.a`
 
 export const MenuRoot = styled(NavigationMenu.Root)`
   display: flex;
-  padding: 0 2rem;
-  height: 100%;
 `;
 
 export const MenuList = styled(NavigationMenu.List)`
   display: flex;
   text-decoration: none;
   list-style: none;
-  height: 100%;
 `;
 
 export const MenuTrigger = styled(NavigationMenu.Trigger)`
   display: flex;
   align-items: center;
-  gap: 1rem;
-  
-  
 
   border: none;
   cursor: pointer;
   background: none;
   color: white;
 
-  
   > li {
+    display: flex;
+    align-items: flex-end;
     color: white;
+    height: 100%;
     transition: all ease 0.2s;
-    
+    height: 2rem;
+    font-size: 14px;
 
     &:hover {
       color: ${(props) => props.theme.colors["purple-600"]};
@@ -167,7 +165,6 @@ export const MenuContent = styled(NavigationMenu.Content)`
       width: 100%;
       cursor: pointer;
       color: ${(props) => props.theme.colors["black-700"]};
-
 
       &:hover {
         color: ${(props) => props.theme.colors["purple-100"]};
