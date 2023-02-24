@@ -60,6 +60,13 @@ export function Main() {
         descriptionChallenge=" Desenvolva um cartão de embarque"
         figmaLink="https://www.figma.com/file/gR4zDSK9ULixZjGcR5v6rx/%23boraCodar---Desafio-6-(Community)?node-id=1%3A7&t=Y4KbbpfLjV4sA7bQ-0"
       />
+         <WeekChallengeContainer
+        linkChallenge="/challenges/week07"
+        imgChallenge="/assets/carnival-block/images/Challenge-07.png"
+        titleChallenge="Desafio #07 - uma página para seu carnaval"
+        descriptionChallenge=" Desenvolva uma página para seu carnaval"
+        figmaLink="https://www.figma.com/file/X89k6js5clMh4VOLUrs4qL/%23boraCodar---Desafio-7-(Community)?node-id=102%3A19&t=rVsaeq1TKK5Y51Il-0"
+      />
     </Container>
   );
 }

@@ -4,6 +4,7 @@ import { BoardingPass } from "./pages/BoardingPass/BoardingPass";
 import { ButtonsAndCursors } from "./pages/ButtonsAndCursors/ButtonsAndCursors";
 import { Calculator } from "./pages/Calculator/Calculator";
 import { CardProductPage } from "./pages/CardProductPage";
+import { CarnivalBlock } from "./pages/CarnivalBlock/CarnivalBlock";
 
 import { Home } from "./pages/Home/Home";
 import { MusicPlayer } from "./pages/MusicPlayer";
@@ -20,6 +21,7 @@ export function Router() {
         <Route path="/challenges/week04" element={<ChatComponent />} />
         <Route path="/challenges/week05" element={<Calculator />} />
         <Route path="/challenges/week06" element={<BoardingPass />} />
+        <Route path="/challenges/week07" element={<CarnivalBlock />} />
       </Route>
     </Routes>
   );
