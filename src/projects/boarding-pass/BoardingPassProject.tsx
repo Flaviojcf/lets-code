@@ -105,7 +105,7 @@ export function BoardingPassProject() {
           </QrCodeContainer>
           <AttentionContainer>
             <h1>
-              <strong>Atenção:</strong> o portão fecha 16:45
+              <strong>Atenção:</strong> o portão fecha 11:00
             </h1>
           </AttentionContainer>
         </ThirdSection>
