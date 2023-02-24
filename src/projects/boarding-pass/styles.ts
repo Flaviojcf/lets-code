@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  background: ${(props) => props.theme.colors.bordingPass["purple-100"]};
+  background: linear-gradient(rgba(130, 87, 229, 1), rgba(39, 26, 69, 1));
 
   align-items: center;
   justify-content: center;
@@ -91,7 +91,6 @@ export const FlyingTimeContainer = styled.div`
   align-items: center;
 
   width: 100%;
-
 `;
 
 export const FlyingDateContainerInfo = styled.div`
@@ -99,8 +98,7 @@ export const FlyingDateContainerInfo = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-
-  & + & {
+  &:last-child {
     align-items: flex-end;
   }
 
@@ -121,12 +119,13 @@ export const FlyingDateContainerInfo = styled.div`
     color: rgba(0, 0, 0, 0.8);
     font-size: 16px;
     line-height: 19px;
-    
-   }
+  }
 `;
 
 export const FlyingDateContainerImage = styled.div`
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const SecondSection = styled.div`
@@ -135,6 +134,7 @@ export const SecondSection = styled.div`
 
   width: 100%;
   height: 5.25rem;
+  padding: 24px 32px 24px 32px;
 
   background: white;
   border-top: dashed 1px rgba(0, 0, 0, 0.32);
@@ -142,6 +142,30 @@ export const SecondSection = styled.div`
   --mask: radial-gradient(12px at 12px 12px, #0000 98%, #000) -12px -12px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+`;
+
+export const PassagerContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+`;
+
+export const PassagerContainerInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  > p {
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 14px;
+    line-height: 17px;
+  }
+  > h1 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    line-height: 19px;
+  }
 `;
 
 export const ThirdSection = styled.div`
@@ -154,10 +178,94 @@ export const ThirdSection = styled.div`
   background: white;
   border-top: dashed 1px rgba(0, 0, 0, 0.32);
   border-radius: 0px 0px 24px 24px;
+  padding: 24px 32px 24px 32px;
 
   --mask: radial-gradient(12px at 12px 0, #0000 98%, #000) -12px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+`;
+
+export const QrCodeContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+`;
+
+export const EntranceContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+export const EntranceInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.125rem;
+
+  &:first-child {
+    gap: 0.125rem;
+    > p {
+      color: rgba(0, 0, 0, 0.64);
+      font-size: 14px;
+      line-height: 17px;
+    }
+    > h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.375rem;
+      height: 1.687rem;
+      border-radius: 8px;
+      background: rgba(99, 59, 188, 1);
+      color: white;
+    }
+  }
+
+  > p {
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  > h1 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    line-height: 19px;
+  }
+`;
+
+export const QrCodeImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  > img {
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+
+  > p {
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 14px;
+    line-height: 17px;
+  }
+`;
+
+export const AttentionContainer = styled.div`
+  display: flex;
+  align-self: center;
+  text-align: center;
+
+  margin-top: 1.5rem;
+
+  > h1 {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: 400;
+  }
 `;
 
 export const Footer = styled.div`
