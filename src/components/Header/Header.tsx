@@ -47,7 +47,7 @@ export function Header() {
                     <li>Semana 06</li>
                   </Link>
                   <Link to="/challenges/week07">
-                    <li>Semana 06</li>
+                    <li>Semana 07</li>
                   </Link>
                 </ul>
                 <NavigationMenu.Link />
