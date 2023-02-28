@@ -1,0 +1,56 @@
+[
+  {
+    "image": "/assets/carnival-block/images/pythonCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "São Paulo - SP",
+    "title": "O Python do vovô não sobe mais"
+  },
+  {
+    "image": "/assets/carnival-block/images/nullCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "Florianópolis - SC",
+    "title": "Todo mundo null"
+  },
+  {
+    "image": "/assets/carnival-block/images/exceptionCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "Curitiba - PR",
+    "title": "Hoje dou exception"
+  },
+  {
+    "image": "/assets/carnival-block/images/nodeCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "Salvador - BA",
+    "title": "Manda Node"
+  },
+  {
+    "image": "/assets/carnival-block/images/backCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "São Paulo - SP",
+    "title": "Só no back-end"
+  },
+  {
+    "image": "/assets/carnival-block/images/rubyCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "São Paulo - SP",
+    "title": "Esse anel não é de Ruby"
+  },
+  {
+    "image": "/assets/carnival-block/images/pimentaCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "Rio de Janeiro - RJ",
+    "title": "Pimenta no C# dos outros é refresco"
+  },
+  {
+    "image": "/assets/carnival-block/images/cacheCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "Porto Alegre - RS",
+    "title": "EnCACHE aqui"
+  },
+  {
+    "image": "/assets/carnival-block/images/javaCarnival.png",
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+    "locale": "São Paulo - SP",
+    "title": "Não valho nada mas JAVA li"
+  }
+]

@@ -107,6 +107,7 @@ export const MenuList = styled(NavigationMenu.List)`
   display: flex;
   text-decoration: none;
   list-style: none;
+
 `;
 
 export const MenuTrigger = styled(NavigationMenu.Trigger)`
@@ -126,6 +127,7 @@ export const MenuTrigger = styled(NavigationMenu.Trigger)`
     transition: all ease 0.2s;
     height: 2rem;
     font-size: 14px;
+    
 
     &:hover {
       color: ${(props) => props.theme.colors["purple-600"]};
@@ -139,6 +141,7 @@ export const MenuContent = styled(NavigationMenu.Content)`
 
   > ul {
     border: 1px solid white;
+    
     box-shadow: 10px 23px 39px -17px rgba(0, 0, 0, 0.75);
 
     list-style: none;

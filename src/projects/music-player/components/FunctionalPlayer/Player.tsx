@@ -21,6 +21,7 @@ export function Player({isPlayerOnScreen}:DesignPlayer) {
   const [duration, setDuration] = useState(0);
   const [current, setCurrent] = useState(0);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+  
 
   function handleSetMusicPosition(id: string) {
     const actions = {
