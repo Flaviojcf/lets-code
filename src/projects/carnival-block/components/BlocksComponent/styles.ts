@@ -26,7 +26,11 @@ export const TitleBlockContainer = styled.div`
   }
 `;
 
-export const ButtonsTitleBLock = styled.div`
+interface IButtonsTitle {
+  isPurple : string;
+}
+
+export const ButtonsTitleBLock = styled.div<IButtonsTitle>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,15 +48,17 @@ export const ButtonsTitleBLock = styled.div`
   }
 
   > p:nth-child(1) {
-    background: rgba(98, 70, 234, 1);
+    background: ${(props)=>props.isPurple === 'Lista' ? "rgba(98, 70, 234, 1)" : " "};
     padding: 4px 24px;
     border-radius: 6px;
+    color: ${(props)=>props.isPurple !== 'Lista' ? "rgba(98, 70, 234, 1)" : "white"};
   }
 
   > p:nth-child(2) {
+    background: ${(props)=>props.isPurple === 'Mapa' ? "rgba(98, 70, 234, 1)" : " "};
     padding: 4px 24px;
     border-radius: 6px;
-    color: rgba(98, 70, 234, 1);
+    color: ${(props)=>props.isPurple !== 'Mapa' ? "rgba(98, 70, 234, 1)" : "white"};
   }
 
 

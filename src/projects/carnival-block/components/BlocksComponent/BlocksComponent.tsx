@@ -18,19 +18,32 @@ interface dbCarnivalType {
 
 interface BlocksComponentInterface {
   filter: string;
+  locale: string;
 }
 
-export function BlocksComponent({ filter }: BlocksComponentInterface) {
+export function BlocksComponent({ filter, locale }: BlocksComponentInterface) {
   const [carnivalBlocks, setCarnivalBlokcs] = useState<dbCarnivalType[]>([]);
+  const [isPurple, setIsPurple] = useState("Lista");
+
 
   useEffect(() => {
     setCarnivalBlokcs(dbCarnival);
     handleSearch();
-  }, [filter]);
+  }, [filter, locale]);
 
   function handleSearch() {
-    const db = dbCarnival.filter((db) => db.title.toUpperCase().includes(filter.toUpperCase()));
-    setCarnivalBlokcs(db);
+    if (locale !== "Selecione uma cidade") {
+      const db = dbCarnival.filter((db) => db.locale === locale);
+      const dbTeste = db.filter((db) =>
+        db.title.toUpperCase().includes(filter.toUpperCase())
+      );
+      setCarnivalBlokcs(dbTeste);
+    } else {
+      const dbFilter = dbCarnival.filter((db) =>
+        db.title.toUpperCase().includes(filter.toUpperCase())
+      );
+      setCarnivalBlokcs(dbFilter)
+    }
   }
 
   return (
@@ -38,9 +51,9 @@ export function BlocksComponent({ filter }: BlocksComponentInterface) {
       <TitleBlockContainer>
         <h1>Blocos recomendados</h1>
 
-        <ButtonsTitleBLock>
-          <p>Lista</p>
-          <p>Mapa</p>
+        <ButtonsTitleBLock isPurple={isPurple}>
+          <p onClick={() => setIsPurple("Lista")}>Lista</p>
+          <p onClick={() => setIsPurple("Mapa")}>Mapa</p>
         </ButtonsTitleBLock>
       </TitleBlockContainer>
       <Blocks>

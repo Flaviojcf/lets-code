@@ -146,7 +146,11 @@ export const FilterByName = styled.div`
   }
 `;
 
-export const FilterByCity = styled.div`
+interface IFilterByCity{
+  isHidden: boolean;
+}
+
+export const FilterByCity = styled.div<IFilterByCity>`
   display: flex;
   align-items: center;
   height: 3rem;
@@ -154,6 +158,8 @@ export const FilterByCity = styled.div`
   background: #f4f4ff;
   border-radius: 8px;
   cursor: pointer;
+
+  border: ${(props)=>props.isHidden === true ? 'none' : '1px solid #6246ea '};
 
   > p {
     font-size: 0.75rem;
@@ -164,6 +170,10 @@ export const FilterByCity = styled.div`
 
   > div {
     margin-top: 18rem;
+  }
+  
+  &:hover {
+    border: 1px solid #6246ea;
   }
 
   background-image: url("/assets/carnival-block/images/gps.png"),
@@ -180,16 +190,34 @@ export const FilterByCity = styled.div`
 
 `;
 
-export const OptionGroudContainer = styled.div`
-  margin-top: 0.5rem;
-  border-radius: 8px;
-  padding: 0.2rem;
-  box-shadow: 10px 25px 64px -18px rgba(0,0,0,0.75);
-  display: none;
+interface IOptionGroudContainer{
+  isHidden: boolean;
+}
 
-  &:hover {
-    color: red;
+export const OptionGroudContainer = styled.optgroup<IOptionGroudContainer>`
+  display: ${(props)=>props.isHidden === true ? 'none' : 'flex'};
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 18.5rem;
+  width: 10rem;
+  z-index: 4;
+  gap: 0.5rem;
+
+  border-radius: 8px;
+  background: white;
+  padding: 1rem;
+  box-shadow: 10px 6px 41px 9px rgba(0,0,0,0.75);
+  
+  >option:first-child {
+    margin-top: -2rem;
   }
+
+ > option:hover {
+  color: #6246ea;
+
+ }
 
 `;
 

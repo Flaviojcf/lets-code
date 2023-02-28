@@ -17,12 +17,20 @@ import dbCarnival from "./db/carnival.json";
 export function CarnivalBlockProject() {
   const [text, setText] = useState("");
   const [filter, setFilter] = useState("");
+  const [filterLocale, setFilterLocale] = useState("Selecione uma cidade")
+  const [isHidden, setIsHidden] = useState(true)
+  const [locale, setLocale] = useState('')
 
   function handleSearch() {
     setFilter(text);
+    if(locale) {
+      setFilterLocale(locale);
+    } else {
+      setFilterLocale("Selecione uma cidade");
+    }
   }
 
-  function teste() {}
+
 
   return (
     <Container>
@@ -46,16 +54,15 @@ export function CarnivalBlockProject() {
                 value={text}
               />
             </FilterByName>
-            <FilterByCity onClick={teste}>
-              <p>Selecione uma cidade</p>
-              <OptionGroudContainer>
-                {dbCarnival.map((carnivalLocale) => {
-                  return (
-                    <OptionGroudContainer>
-                      {carnivalLocale.locale}
-                    </OptionGroudContainer>
-                  );
-                })}
+            <FilterByCity isHidden={isHidden} onClick={()=>setIsHidden(!isHidden)}>
+              {locale ? <p>{locale}</p> : <p>Selecione uma cidade</p>}
+              <OptionGroudContainer isHidden={isHidden}>
+              <option onClick={()=>setLocale('Selecione uma cidade')}>Selecione uma cidade</option>
+                <option onClick={()=>setLocale('São Paulo - SP')}>São Paulo - SP</option>
+                <option onClick={()=>setLocale('Curitiba - PR')}>Curitiba - PR</option>
+                <option onClick={()=>setLocale('Salvador - BA')}>Salvador - BA</option>
+                <option onClick={()=>setLocale('Rio de Janeiro - RJ')}>Rio de Janeiro - RJ</option>
+                <option onClick={()=>setLocale('Porto Alegre - RS')}>Porto Alegre - RS</option>
               </OptionGroudContainer>
             </FilterByCity>
 
@@ -63,7 +70,7 @@ export function CarnivalBlockProject() {
           </SearchHeaderContent>
         </HeaderContent>
       </HeaderCarnival>
-      <BlocksComponent filter={filter} />
+      <BlocksComponent filter={filter} locale={filterLocale} />
     </Container>
   );
 }
